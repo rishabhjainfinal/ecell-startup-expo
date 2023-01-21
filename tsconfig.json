@@ -25,6 +25,8 @@
 		".next",
 		"tsconfig.json",
 		"next.config.js",
-		".husky"
+		".husky",
+		"pnpm-lock.yaml",
+		"npm-lock.yaml"
 	]
 }
