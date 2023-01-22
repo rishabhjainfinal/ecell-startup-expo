@@ -17,7 +17,10 @@ node setup.js
     - [x] setup online database 
     - [x] update for mondodb configration
     - [ ] create schemas for the use cases
-- [ ] add authentication 
+- [x] add authentication - nextauth
+    - [x] setup authentication for the admin with credential pages
+    - [x] add pages to login 
+    - [x] add index pages   
 - [ ] create folder structure for the project
 
 <!-- create user and add their perpective user git id  -->

@@ -2,13 +2,13 @@ const fs = require("fs");
 const { execSync, exec } = require("child_process");
 
 // add a file .enc.local if not exists
-if (!fs.existsSync(".env.local")) {
-	process.stdout.write("Creating .env.local... ");
-	fs.writeFileSync(".env.local", "");
-	console.log("Done 😏");
-} else {
-	console.log(" 😏 .env.local already exists");
-}
+// if (!fs.existsSync(".env.local")) {
+// 	process.stdout.write("Creating .env.local... ");
+// 	fs.writeFileSync(".env.local", "");
+// 	console.log("Done 😏");
+// } else {
+// 	console.log(" 😏 .env.local already exists");
+// }
 
 // add a file .enc.local if not exists
 if (!fs.existsSync(".env")) {
