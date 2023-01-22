@@ -12,9 +12,12 @@ node setup.js
 - [x] add prettier
 - [x] add husky
 - [x] add .vscode setting for the project
-- [ ] add tailwind
-- [ ] add prisma
-- [ ] setup online database 
+- [x] add tailwind
+- [x] add prisma
+    - [x] setup online database 
+    - [x] update for mondodb configration
+    - [ ] create schemas for the use cases
+- [ ] add authentication 
 - [ ] create folder structure for the project
 
 <!-- create user and add their perpective user git id  -->

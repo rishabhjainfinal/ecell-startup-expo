@@ -10,6 +10,15 @@ if (!fs.existsSync(".env.local")) {
 	console.log(" 😏 .env.local already exists");
 }
 
+// add a file .enc.local if not exists
+if (!fs.existsSync(".env")) {
+	process.stdout.write("Creating .env ... ");
+	fs.writeFileSync(".env", "");
+	console.log("Done 😏");
+} else {
+	console.log(" 😏 .env already exists");
+}
+
 // check if pnpm is installed else go with yarn or npm
 exec("pnpm -v", (err, stdout, stderr) => {
 	process.stdout.write("Installing node modules... ");
