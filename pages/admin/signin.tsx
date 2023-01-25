@@ -20,8 +20,12 @@ export default function Signin({}: Props) {
 			password: userInfo.password,
 			redirect: false,
 		});
-		Router.replace("/admin");
-		// console.log(res)
+		// if there is no error, redirect to admin page
+		if (res?.error == null) {
+			Router.replace("/admin");
+		} else {
+			Router.replace("/admin/error");
+		}
 	};
 	return (
 		<div className="flex items-center justify-center bg-gray-200 h-screen">

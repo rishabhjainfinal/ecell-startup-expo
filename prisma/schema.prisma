@@ -10,9 +10,38 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// model User {
-//   id    String  @id @default(auto()) @map("_id") @db.ObjectId
-//   name  String
-//   password String 
-//   email String  @unique
-// }
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  password String
+  email    String @unique
+  role     String @default("participant") // participant or guest(hace credit of 5)
+  credit   Int    @default(0) // 0 or 5 
+
+  Startup   Startup? @relation(fields: [startupId], references: [id])
+  startupId String?  @db.ObjectId
+}
+
+model Startup {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  description String
+  logo        String
+  website     String
+  // location    String
+  // industry    String
+  // stage       String
+  // funding     String
+  // team        String
+  // founders    String
+  // investors   String
+  // advisors    String
+  // board       String
+  // revenue     String
+  // valuation   String
+  // traction    String
+  // growth      String
+  // users       User[] @relation( fields: [] ,references: [id])
+
+  User User[]
+}

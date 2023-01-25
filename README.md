@@ -1,9 +1,17 @@
 # ecell startup expo
 
-## setup 
+## installation
+
+### setup 
 after cloning repo run this command for one time to setup all important files 
 ```bash
 node setup.js
+```
+
+### vscode snipts for this project are pre setup in the project
+```bash
+new component : nc
+new page : np
 ```
 
 ## To-Do
