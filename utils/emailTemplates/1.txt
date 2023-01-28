@@ -1,0 +1,4 @@
+sub: this is test templates
+{{Username}}
+{{Email}}
+this is the test email 

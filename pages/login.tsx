@@ -29,7 +29,7 @@ export default function login() {
 							<Image
 								alt="Background-img"
 								className="absolute left-[277px] top-[32px]"
-								src="/launchpad-vertical.png"
+								src="/Launchpad-vertical.png"
 								width={430}
 								height={430}
 							></Image>
