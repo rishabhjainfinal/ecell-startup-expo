@@ -18,7 +18,7 @@ export default function Signup() {
 			</Head>
 			<main className="h-[900px] overflow-hidden">
 				<section className="text-gray-800 body-font">
-					<div className="container mx-auto">
+					<div className="container mx-auto h-screen">
 						<div className="w-full flex flex-wrap">
 							<Image
 								alt="Background-img"
@@ -29,10 +29,10 @@ export default function Signup() {
 							></Image>
 							<Image
 								alt="Background-img"
-								className="absolute left-[201px]"
+								className="absolute left-[249px] top-[32px]"
 								src="/launchpad-vertical.png"
-								width={500}
-								height={500}
+								width={450}
+								height={450}
 							></Image>
 							<div className="w-1/2 pt-20 flex flex-col items-center mx-auto">
 								<div className="flex flex-col gap-12 w-9/12">
@@ -211,14 +211,16 @@ export default function Signup() {
 															Password
 															<sup>*</sup>
 														</label>
-														<input
-															type="password"
-															name="first-name"
-															id="first-name"
-															autoComplete="given-name"
-															className="mt-1 block w-full rounded-md border-[1px] font-md px-2 py-1 border-[#7E8488] shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm outline-none"
-															placeholder="8+ characters"
-														/>
+														<div className="flex gap-5">
+															<input
+																type="password"
+																name="first-name"
+																id="first-name"
+																autoComplete="given-name"
+																className="mt-1 block w-full rounded-md border-[1px] font-md px-2 py-1 border-[#7E8488] shadow-sm focus:border-gray-700 focus:ring-gray-700 sm:text-sm outline-none"
+																placeholder="8+ characters"
+															/>
+														</div>
 													</div>
 
 													<div className="col-span-6 sm:col-span-3">
