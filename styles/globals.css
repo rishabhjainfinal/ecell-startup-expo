@@ -1,4 +1,5 @@
 @tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 button,
 input,
@@ -7,5 +8,51 @@ select,
 textarea {
 	line-height: 1.15;
 }
+
 @tailwind components;
 @tailwind utilities;
+
+.line-div::before {
+	content: "";
+	position: absolute;
+	left: -270px;
+	top: 46px;
+	width: 268px;
+	height: 1px;
+	background: #686868;
+}
+
+.line-div::after {
+	content: "";
+	position: absolute;
+	left: 18px;
+	top: 46px;
+	width: 268px;
+	height: 1px;
+	background: #686868;
+}
+
+.line-div-login::before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 46px;
+	width: 268px;
+	height: 1px;
+	background: #686868;
+}
+
+.line-div-login::after {
+	content: "";
+	position: absolute;
+	left: 299px;
+	top: 46px;
+	width: 268px;
+	height: 1px;
+	background: #686868;
+}
+
+.test {
+	/* background: #000; */
+	overflow: hidden;
+}
