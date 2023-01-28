@@ -29,6 +29,10 @@ new page : np
     - [x] setup authentication for the admin with credential pages
     - [x] add pages to login 
     - [x] add index pages   
-- [ ] create folder structure for the project
+- [x] create folder structure for the project
+- [ ] add api routes for data fetching and passing 
+- [ ] add middleware setting for authencation only 
+- [ ] add zod for schema validation
+
 
 <!-- create user and add their perpective user git id  -->
