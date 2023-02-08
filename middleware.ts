@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 
 export const config = {
 	matcher: [
-		"/dashboard/*",
+		// "/dashboard/*",
 		/*
 		 * Match all request paths except for the ones starting with:
 		 * - api (API routes)
